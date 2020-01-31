@@ -1,2 +1,13 @@
 <h2>This is about Typescript</h2>
-<app-question-box></app-question-box>
+<ng-container [ngSwitch]="renderType">
+  <ng-container *ngSwitchCase="'singleComponent'">
+    <app-question-box></app-question-box>
+  </ng-container>
+  <ng-container *ngSwitchCase="'multipleComponents'">
+    <app-question-box></app-question-box>
+    <app-weather-box></app-weather-box>
+  </ng-container>
+  <ng-container *ngSwitchDefault>
+    <app-question-box></app-question-box>
+  </ng-container>
+</ng-container>
