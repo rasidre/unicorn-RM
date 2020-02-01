@@ -2,10 +2,10 @@
   <a href="{{ renderQuestion.link }}">
     <h4 [innerHtml]="renderQuestion.title"></h4>
     <p>
-      Created: {{ renderQuestion.creation_date * 1000 | date: "dd.MM.yyyy"
+      Created: {{ renderQuestion.creation_date * 1000 | date: "dd.MM.yyyy HH:mm"
       }}<br />
       Last activity:
-      {{ renderQuestion.last_activity_date * 1000 | date: "dd.MM.yyyy" }}<br />
+      {{ renderQuestion.last_activity_date * 1000 | date: "dd.MM.yyyy HH:mm" }}<br />
     </p>
   </a>
 </div>
