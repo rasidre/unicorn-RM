@@ -3,6 +3,14 @@
   border-radius: 15px;
   padding: 10px 20px;
   margin-bottom: 15px;
+  transition: all 0.1s ease-in;
+}
+.question-box:hover {
+  background: #e0e0e0;
+  transform: scale(1.02);
+}
+.question-box a {
+  color: #5b5b5b;
 }
 .question-box h4 {
   font-weight: 600;

@@ -1,12 +1,14 @@
 .weather-box {
   border: 1px solid #555555;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 10px 20px;
   margin-bottom: 15px;
+  text-align: center;
 }
+.weather-box h3,
 .weather-box h4 {
   font-weight: 600;
-  margin: 0;
+  margin: 1;
 }
 .weather-box p {
   margin: 5px 0;

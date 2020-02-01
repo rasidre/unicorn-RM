@@ -1,11 +1,11 @@
 <div class="question-box">
-  <h4 [innerHtml]="renderQuestion.title"></h4>
-  <p>
-    Created: {{ renderQuestion.creation_date * 1000 | date: "dd.MM.yyyy" }}<br />
-    Last activity: {{ renderQuestion.last_activity_date * 1000 | date: "dd.MM.yyyy"
-    }}<br />
-    <a href="{{ renderQuestion.link }}">
-      Have a look at the question on stackoverflow..
-    </a>
-  </p>
+  <a href="{{ renderQuestion.link }}">
+    <h4 [innerHtml]="renderQuestion.title"></h4>
+    <p>
+      Created: {{ renderQuestion.creation_date * 1000 | date: "dd.MM.yyyy"
+      }}<br />
+      Last activity:
+      {{ renderQuestion.last_activity_date * 1000 | date: "dd.MM.yyyy" }}<br />
+    </p>
+  </a>
 </div>
