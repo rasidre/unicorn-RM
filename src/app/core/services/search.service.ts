@@ -4,8 +4,8 @@ import {Observable} from "rxjs";
 
 export interface ISearchResultItem  {
     answer_count: number;
-    closed_date: number;
-    closed_reason: string;
+    closed_date?: number;
+    closed_reason?: string;
     creation_date: number;
     is_answered: boolean;
     last_activity_date: number;
