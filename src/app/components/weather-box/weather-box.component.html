@@ -1,10 +1,10 @@
 <div class="weather-box">
-  <h3>Date and Time</h3>
+  <h4>{{ singleWeatherData["Datum"] }} - {{ singleWeatherData["Zeit"] }}</h4>
   <p>
-    Temp. A: 4<br />
-    Temp. 3: -38.8<br />
-    Luftdruck: 977<br/>
-    Wind: 5<br/>
-    Helligkeit: 0
+    Temp. A.: {{ singleWeatherData["Temp. A."] }}<br />
+    Temp. 3: {{ singleWeatherData["Temp. 3"] }}<br />
+    Luftdruck: {{ singleWeatherData["Luftdruck"] }}<br />
+    Wind: {{ singleWeatherData["Wind"] }}<br />
+    Helligkeit: {{ singleWeatherData["Helligkeit"] }}
   </p>
 </div>

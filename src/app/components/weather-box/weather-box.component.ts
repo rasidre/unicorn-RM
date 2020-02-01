@@ -7,9 +7,16 @@ import * as weatherData from "../../core/services/weatherdata.json";
   styleUrls: ["./weather-box.component.scss"]
 })
 export class WeatherBoxComponent implements OnInit {
+  public singleWeatherData: any;
+  private maxIndex = weatherData["length"] - 1;
   constructor() {}
 
   ngOnInit() {
-    console.log(weatherData['length']);
+    this.singleWeatherData =
+      weatherData[`${this.getRandomDate(this.maxIndex)}`];
+  }
+
+  getRandomDate(maxIndex: number) {
+    return (Math.random() * +maxIndex).toFixed();
   }
 }
