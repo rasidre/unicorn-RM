@@ -1,13 +1,14 @@
 <h2>{{ contentType }}</h2>
 <ng-container [ngSwitch]="renderType">
-  <ng-container *ngSwitchCase="'singleComponent'">
-    <app-question-box></app-question-box>
-  </ng-container>
   <ng-container *ngSwitchCase="'multipleComponents'">
-    <app-question-box></app-question-box>
-    <app-weather-box></app-weather-box>
+    <ng-container *ngFor="let question of questions">
+      <app-question-box [question]="question"></app-question-box>
+      <app-weather-box></app-weather-box>
+    </ng-container>
   </ng-container>
   <ng-container *ngSwitchDefault>
-    <app-question-box></app-question-box>
+    <ng-container *ngFor="let question of questions">
+      <app-question-box [question]="question"></app-question-box>
+    </ng-container>
   </ng-container>
 </ng-container>
