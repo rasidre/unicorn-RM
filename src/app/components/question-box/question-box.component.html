@@ -1,9 +1,10 @@
 <div class="question-box">
-  <h3>This is a title</h3>
+  <h4 [innerHtml]="renderQuestion.title"></h4>
   <p>
-    Created: 44376249832764<br />
-    Last activity: 67342858234<br />
-    <a href="https://www.google.de">
+    Created: {{ renderQuestion.creation_date * 1000 | date: "dd.MM.yyyy" }}<br />
+    Last activity: {{ renderQuestion.last_activity_date * 1000 | date: "dd.MM.yyyy"
+    }}<br />
+    <a href="{{ renderQuestion.link }}">
       Have a look at the question on stackoverflow..
     </a>
   </p>
